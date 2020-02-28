@@ -1,3 +1,42 @@
 # animate-on-view
 A tiny vanilla JavaScript plugin that animates elements as they come into view.
 ![](aov.gif)
+## How to Install
+1. Include the `aos.js` file in your site directory.
+2. Link `aos.js` in your web page.
+## How to Configure
+1. Add class `animated` to whatever element you wish to be animated.
+2. Create an animation in your stylesheet, at the very minimum with an opacity keyframe. For example:
+```
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-5rem, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+```
+3. Add the `data-aov-` data-attribute along with your desired keyframe animation. For example: `data-aov="slide-left"`.
+4. Optionally, you can add `aov-duration` and `aov-delay` attributes which take an `integer` Miliseconds are not supported at this time. Integers are used for the purpose of creating interesting animation offsets. For example:
+```
+<?php foreach ($page->skills as $skill): ?>
+  <div class="skill">
+  <div class="col-3 animated" data-aov="fade-in" data-aov-duration="3" data-aov-delay="<?= $i ?>">
+  <?= $skill->skill_name ?>
+  </div>
+  <div class="progress-bar-wrapper">
+  <div class="progress-bar" style="width:<?=$skill->skill_percentage?>%;">
+  <div class="progress-bar-fill animated" style="background-color: <?= $skill->color ?>; "data-aov="stretch-right" data-aov-duration="3" data-aov-delay="<?= $i ?>"></div>
+  </div>
+  </div>
+  </div>
+<?php $i = $i+0.25; ?>
+<?php endforeach; ?>
+```
+You'll notice how an iterated integer in a `for` loop can be utilized to create interesting animations.
+## Supported Browsers (As of February 2020)
+![](supported-browsers.gif)
