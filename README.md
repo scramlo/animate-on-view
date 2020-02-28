@@ -33,4 +33,4 @@ A tiny vanilla JavaScript plugin that animates elements as they come into view.
 ```
 You'll notice how an iterated integer in a `for` loop can be utilized to create interesting animations.
 ## Supported Browsers (As of February 2020)
-![](supported-browsers.png)
+![](aov-compatibility.png)
