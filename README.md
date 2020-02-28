@@ -5,7 +5,7 @@ A tiny vanilla JavaScript plugin that animates elements as they come into view.
 1. Include the `aos.js` file in your site directory.
 2. Link `aos.js` in your web page.
 ## How to Configure
-1. Add class `animated` to whatever element you wish to be animated.
+1. Add class `aov` to whatever element you wish to be animated.
 2. Create an animation in your stylesheet, at the very minimum with an opacity keyframe. For example:
 ```
 @keyframes slide-left {
