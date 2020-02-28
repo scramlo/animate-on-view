@@ -1,4 +1,4 @@
-const animatedElements = document.querySelectorAll('.animated');
+const animatedElements = document.querySelectorAll('.aov');
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
