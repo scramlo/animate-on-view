@@ -33,6 +33,8 @@ A **tiny (1.63 KB)** vanilla JavaScript plugin that animates elements as they co
 ?>
 ```
 You'll notice how an iterated integer in a `for` loop can be utilized to create interesting animations.
-Codepen Link [Here] (https://codepen.io/scramlo/pen/vYOmjOO)
+
+Codepen Link: https://codepen.io/scramlo/pen/vYOmjOO
+
 ## Supported Browsers (As of February 2020)
 ![](aov-compatibility.png)
