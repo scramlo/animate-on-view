@@ -1,5 +1,5 @@
 # animate-on-view
-A tiny vanilla JavaScript plugin that animates elements as they come into view.
+A **tiny (1.63 KB)** vanilla JavaScript plugin that animates elements as they come into view.
 ![](aov.gif)
 ## How to Install
 1. Include the `aos.js` file in your site directory.
