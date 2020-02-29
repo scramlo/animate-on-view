@@ -3,8 +3,8 @@ A **tiny (1.63 KB)** vanilla JavaScript plugin that animates elements as they co
 
 ![](aov.gif)
 ## How to Install
-1. Include the `aos.js` file in your site directory.
-2. Link `aos.js` in your web page.
+1. Include the `aov.js` file in your site directory.
+2. Link `aov.js` in your web page.
 ## How to Configure
 1. Add class `aov` to whatever element you wish to be animated.
 2. Create an animation in your stylesheet, at the very minimum with an opacity keyframe. For example:
