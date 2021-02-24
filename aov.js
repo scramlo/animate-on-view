@@ -20,8 +20,8 @@ const observer = new IntersectionObserver(entries => {
     if ((entry.intersectionRatio > 0) && (entry.target.dataset.aov)) { //when on screen and has animations
 
       //get animation settings if any and create array
-      animationNames = entry.target.dataset.aov.split(" ");
-      newAnimationSettingsArray = [];
+      const animationNames = entry.target.dataset.aov.split(" ");
+      let newAnimationSettingsArray = [];
 
       //for each animation, create a string with the duration and delay attached
       for (var i = 0; i < animationNames.length; i++) {
