@@ -11,7 +11,7 @@ Licensed works, modifications, and larger works may be distributed under differe
 
 const animatedElements = document.querySelectorAll('.aov');
 
-observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
 
     //every animated element needs to start transparent
