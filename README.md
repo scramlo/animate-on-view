@@ -2,9 +2,13 @@
 A **tiny (1.63 KB)** vanilla JavaScript plugin that animates elements as they come into view.
 
 ![](aov.gif)
-## How to Install
+## How to Install Locally
 1. Include the `aov.js` file in your site directory.
 2. Link `aov.js` in your web page.
+
+## How to Install via CDN
+1. Include `<script src="https://cdn.jsdelivr.net/gh/scramlo/animate-on-view@master/aov.js"></script>` in your project.
+
 ## How to Configure
 1. Add class `aov` to whatever element you wish to be animated.
 2. Create an animation in your stylesheet, at the very minimum with an opacity keyframe. For example:
